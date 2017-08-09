@@ -1,0 +1,62 @@
+A tool is an entity that 
+	has 
+		a name, 
+		a list of properties (hard and useful), 
+		a list of functions (timecheck(name) and break()), 
+		and is holdable.
+
+
+A tool 
+	is an entity that
+		has
+			a name
+			a list of properties (hard and useful)
+			a list of functions (timecheck(name) and break())
+		is 
+			holdable
+
+#A tool 
+objectName = tool
+objects.append(tool)
+#	is an entity that
+entityTypes[objectName]={}
+#		has
+#			a name
+entityTypes[objectName][name]=''
+#			a list of properties//? (hard and useful)
+entityTypes[objectName][properties][]
+#			a list of functions//? (timecheck(name) and break())
+entityTypes[objectName][functions]=[]
+#		is 
+#			holdable
+entityTypes[objectName][holdable]=True
+
+#It is heavy, its color is black, and does not have tires.
+objectName=prevObjName
+if objectName in entityTypes:
+	entityTypes[objectName][heavy]=True
+	entityTypes[objectName][color]=black
+	del entityTypes[objectName][tires]
+
+
+
+
+
+
+A tool 
+	is an entity that	has 
+		name, 
+		list of properties (hard and useful), 
+		list of functions (timecheck(name) and break()), 
+	and is holdable.
+
+a basket is an entity that
+	has an apple, which is a fruit that 
+		and is red and has a shape which is round, and an orange, which is a fruit that
+			has a shape which is round and is orange.
+	
+the box is square and has gold and a skull inside it.
+
+a basket is an entity that has a list of fruit (an apple, which is red and has a shape which is round, and an orange, which is a fruit that has a shape which is round and is orange.
+
+is, has, which, that, can be verb

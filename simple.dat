@@ -1,0 +1,7 @@
+A tool is an entity that has
+	a name, a list of properties (hard and useful), a list of functions (timecheck(name) and break()), and is holdable.
+
+A car is an entity that has
+	a name, a color, a model, and a list of tires(front left, front right, back left, and back right).
+
+It is heavy, its color is black, and does not have tires.

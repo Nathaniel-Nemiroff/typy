@@ -1,0 +1,19 @@
+a time is an entity
+	it has a counter.
+
+an item is an entity
+	it has points.
+
+a room is an entity
+	it has items and rooms.
+
+An Apple is an item
+	it has 20 points.
+
+A Foyer is a room
+	it has items (an apple, a stick, and a ghost)
+	and it has more rooms
+		(The attic, the west wing, and the dinning room)
+	and if the player enters the foyer, their hunger goes up one
+	and if the time is night time, the player gets spooked.
+

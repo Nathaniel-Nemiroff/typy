@@ -1,0 +1,26 @@
+room{
+	rooms[]
+	text
+	entities[][]
+}
+how do you make it so you can define a function dynamically?
+	maybe you can just set a certain number of functions and keep an array or linked list or string that contains a code that will acivate different functions with each array/character
+	just check the 0th item of each item in each item in the 'code' array, this can even have a little bit of compiling if necessary
+
+func1 item{
+	delete entity item
+	edit player stat OP X
+}
+
+// make passive checks?
+passive1 item{
+	if item exists/has attr/{
+		func1 item
+	}
+}
+
+you can parse the text to seperate items out into individual items, maybe objects with arrays
+	entities become objects
+	functions become arrays, so that instructions can still bei in order
+	should entities contain functions?  Point to a function id?
+	

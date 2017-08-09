@@ -1,0 +1,50 @@
+global{
+	objects{ apple }
+	actions{ 
+		start{ current(room1) flavor() }
+		default{ flavor() }
+		back{ dropfocus() } 
+		inventory{ takefocus(global) objects() dropfocus() } 
+		look{flavor()}
+	}
+}
+
+key{
+	flavor{"a rusty key"}
+	actions{ 
+		take { print(you take the key)
+					 move(key global) 
+		}
+	}
+}
+apple{
+	flavor{"a juicy apple"}
+	actions{ 
+		default{ takefocus(apple) flavor() dropfocus() }
+		eat{ print(Sure is tasty!) delete(apple)} 
+	}
+}
+
+room1{
+	flavor{"This is the first room"}
+	objects{room2 room3}
+	actions{ 	
+		default{ current(room1) print(first room!) }
+		look{ print(this is a great room!) flavor() } 
+	}
+}
+room2{
+	flavor{"second room"}
+	objects{room1 room3 key}
+	actions{ 
+		default{ current(room2) print(second room.) }
+		look{ print(second room's ok...) flavor() } 
+	}
+}
+room3{
+	flavor{"third"}
+	objects{room1 room2}
+	actions{
+		default{ current(room3) print(third room...)}
+	}
+}

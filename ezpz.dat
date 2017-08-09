@@ -1,0 +1,28 @@
+globle{
+	objects{
+		costume{
+			actions{ view { print 'blah' } }
+		}
+		inventory{ 
+			objects{key, rope}
+			actions{view { print objects } }
+		 }
+	}
+}
+
+Foyer{
+	objects{ attic, west wing, kitchen, apple, ghost}
+	actions{ go{current(Foyer)} }
+	triggers{ attic{ current(basement), print(trap!)}}
+}
+Apple{
+	actions{ eat { delete(this), sub(hunger, 1) } inspect { print(a shiney apple) } }
+}
+ghost{
+	actions{ talk to{ print(hello) delete(Foyer[apple]) give(ghost, apple) } }
+}
+
+
+billy {
+  actions { talk { current(billy) } }
+}
